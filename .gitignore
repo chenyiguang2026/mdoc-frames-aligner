@@ -1,0 +1,37 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local data, backups, logs, and execution locks
+data/
+frames/
+frames_backup*/
+mdocs/
+mdocs_backup*/
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.mrc
+*.mrcs
+*.eer
+*.mdoc
+*.MDOC
+*.bak
+*.log
+*.tmp
+*.align_mdoc_frames.lock
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Distribution archives
+*.zip
