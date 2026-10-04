@@ -232,28 +232,5 @@ mdoc-frames-aligner/
     └── test_english_cli.py
 ```
 
-在仓库根目录运行：
 
-```bash
-python3 -B -m unittest discover -s tests -v
-```
 
-测试使用临时模拟文件，不包含真实显微镜数据。覆盖中英文版本、启用/关闭备份、独立原始 mdoc 备份、缺失文件、重名冲突、重复运行、编码、中断回退和英文 CLI。当前整理版本在本地 Python 3.12 下通过 102 项测试，并检查了 Python 3.8 语法兼容性；尚未在你的集群上运行。
-
-## 上传到 GitHub
-
-在 GitHub 创建一个空仓库，然后在此文件夹内执行以下命令，将 `YOUR_USERNAME` 替换为你的 GitHub 用户名：
-
-```bash
-git init
-git branch -M main
-git add .
-git status --short
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/mdoc-frames-aligner.git
-git push -u origin main
-```
-
-`.gitignore` 已排除常见原始数据目录、TIFF/MRC/EER/mdoc 文件、备份、日志、执行锁和 Python 缓存。提交前检查 `git status`。ZIP 包含源码和文档，不包含本地 Git 历史；解压后上传其中的仓库内容。
-
-元数据字段参考：[SerialEM 文件格式：SubFramePath](https://bio3d.colorado.edu/SerialEM/hlp/html/about_formats.htm)。
