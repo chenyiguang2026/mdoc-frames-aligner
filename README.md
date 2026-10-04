@@ -238,20 +238,4 @@ python3 -B -m unittest discover -s tests -v
 
 Tests use temporary synthetic files, not microscope data. They cover both languages, enabled/disabled backups, independent original mdoc backups, missing references, collisions, repeated runs, encodings, interrupts, rollback, and the English CLI. The prepared version passed 102 local tests with Python 3.12; Python 3.8 syntax was checked, but it has not been executed on your cluster.
 
-## Upload to GitHub
 
-Create an empty GitHub repository, then run these commands from this folder. Replace `YOUR_USERNAME` with your GitHub username:
-
-```bash
-git init
-git branch -M main
-git add .
-git status --short
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/mdoc-frames-aligner.git
-git push -u origin main
-```
-
-The provided `.gitignore` excludes common data directories, TIFF/MRC/EER/mdoc files, backups, logs, locks, and Python caches. Review `git status` before committing. The ZIP contains source files and documentation without local Git history; extract it before uploading its contents.
-
-Metadata reference: [SerialEM file formats: SubFramePath](https://bio3d.colorado.edu/SerialEM/hlp/html/about_formats.htm).
