@@ -236,6 +236,6 @@ Run from the repository root:
 python3 -B -m unittest discover -s tests -v
 ```
 
-Tests use temporary synthetic files, not microscope data. They cover both languages, enabled/disabled backups, independent original mdoc backups, missing references, collisions, repeated runs, encodings, interrupts, rollback, and the English CLI. The prepared version passed 102 local tests with Python 3.12; Python 3.8 syntax was checked, but it has not been executed on your cluster.
+
 
 
